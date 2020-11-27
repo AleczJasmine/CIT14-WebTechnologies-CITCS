@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Acier X-Caliber</title>
+
+<style>
+  /*FULL SCREEN FOR WEBPAGE*/
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+/*BACKGROUND ATTRIBUTES FOR BODY*/
+.bg {
+  /* The image used */
+  background-image: url("choice5.jpg");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.logo {
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+.buttons {
+  display:inline-block;
+    margin-left: auto;
+  margin-right: auto;
+  padding: 14px 20px;
+  width: 10%;
+}
+.buttons a:hover {
+  background-color: #ff0000;
+  color: black;
+}
+#images{
+  text-align: center;
+}
+.isDisabled {
+  color: black;
+  background-color: #d22d2d;
+  pointer-events: none;
+}
+
+/*BACKGROUND ATTRIBUTES FOR NAVIGATION*/
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: black;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 14px 20px;
+
+}
+
+/* Change color on hover */
+.navbarimg {
+  display: inline;
+  float: right;
+}
+.navbarimg a:hover {
+  background-color: #d22d2d;
+  color: black;
+}
+
+/*BACKGROUND ATTRIBUTES FOR FOOTER*/
+.footer {
+   overflow: hidden;
+  background-color: black;
+  padding: 20px;
+  text-align: center;
+}
+select {
+  width: 15%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 3px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+#plain {
+  border-radius: 5px;
+  filter: alpha(opacity=50);
+  padding: 20px;
+  text-align: center;
+}
+
+</style>
+</head>
+<body>
+
+
+
+     <div class="navbar">
+   
+    <p>
+       <a href="C:/Users/user/Desktop/COLLEGE/CC1 - COMP-FUND/h/WEBSITE.html">
+     <img src = "C:/Users/user/Desktop/COLLEGE/CC1 - COMP-FUND/h/smalllogotemplate.png" style="width:150px;height:60px;">
+      </a>
+     </p>
+
+      <p class ="navbarimg">
+   <a href="C:/Users/user/Desktop/COLLEGE/CC1 - COMP-FUND/h/SIGNUP.html"  title="Become a member">
+<img src ="C:/Users/user/Desktop/COLLEGE/CC1 - COMP-FUND/h/signup.png">
+</a>
+</p>
+ <p class ="navbarimg">
+   <a class="isDisabled" href="C:/Users/user/Desktop/COLLEGE/CC1 - COMP-FUND/h/LOGIN.html" title="See whats coming">
+<img src ="C:/Users/user/Desktop/COLLEGE/CC1 - COMP-FUND/h/home.png">
+</a>
+</p>
+
+     <p class ="navbarimg">
+   <a href="C:/Users/user/Desktop/COLLEGE/CC1 - COMP-FUND/h/CONTACTUS.html"  title="Inquiries">
+<img src ="C:/Users/user/Desktop/COLLEGE/CC1 - COMP-FUND/h/contact.png">
+</a>
+</p>
+     <p class ="navbarimg">
+   <a href="C:/Users/user/Desktop/COLLEGE/CC1 - COMP-FUND/h/ABOUTUS.html" title="Find out more about the creators">
+<img src ="C:/Users/user/Desktop/COLLEGE/CC1 - COMP-FUND/h/about.png">
+</a>
+</p>
+
+  <p class ="navbarimg">
+   <a href="C:/Users/user/Desktop/COLLEGE/CC1 - COMP-FUND/h/PRODUCTSMAIN.html" title="Shop for exclusive products">
+<img src ="C:/Users/user/Desktop/COLLEGE/CC1 - COMP-FUND/h/pro.png">
+</a>
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="bg">
+  
+     <div id="plain">
+      <p>
+<h1 style ="color: white;font-family: Courier New; text-align:center;"> LOGIN TO VIEW YOUR PROFILE</h1><br>
+<form name = "login">
+  <h3 style ="color: white; font-family: Courier New; text-align:left; text-align: center; background-color: black"> Username </h3>
+  <input type="text" name="userid"/>
+<br><br>
+ <h3 style ="color: white; font-family: Courier New; text-align:left; text-align: center;background-color: black"> Password </h3>
+<input type="password" name="pswrd"/>
+<br><br><br>
+<input type="button" onclick="check(this.form)" value="Login"/>
+<input type="reset" value="Cancel"/>
+</form>
+  <br><br><br>
+
+<script language="javascript">
+function check(form)/*function to check userid & password*/
+{
+ /*the following code checkes whether the entered userid and password are matching*/
+ if(form.userid.value == "admin" && form.pswrd.value == "admin")
+  {
+    window.open('HOME.html')/*opens the target page while Id & password matches*/
+  }
+ else
+ {
+   alert("Error Password or Username")/*displays error message*/
+  }
+}
+</script>
+
+      </p>
+      <p class="buttons">
+       <a href="C:/Users/user/Desktop/COLLEGE/CC1 - COMP-FUND/h/WEBSITE.html">
+     <img src = "C:/Users/user/Desktop/COLLEGE/CC1 - COMP-FUND/h/back.png">
+      </a>
+     </p>
+  </div>
+</div>
+
+
+
+
+<div class="footer">
+ <font color="white">All Rights Reserved 2020</font>
+</div>
+
+
+
+</body>
+</html>
